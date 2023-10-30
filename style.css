@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%
+}
+
+#main {
+    width: 100%;
+    height: 100vh;
+    /* background-color: crimson; */
+}
+
+#back {
+    width: 100%;
+    height: 100vh;
+    /* background-color: blue; */
+}
+
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top {
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgba(0, 0, 0, 0.342); */
+}
+
+#working {
+    position: relative;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    margin: 0 auto;
+    /* border: 2px solid crimson; */
+    /* background: purple; */
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+#nav img{
+    height: 60px;
+}
+
+#nleft,
+#nright {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+#nav a {
+    pointer-events: all;
+    font-family: 'Kanit', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: xx-large;
+    font-family: 'Satisfy', cursive;
+    color: white;
+}
+
+
+
+#hero{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* height: 200px; */
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    /* background-color: red; */
+}
+
+#hleft,#hright{
+    margin-top: 50px;
+    /* border: 2px solid crimson; */
+
+}
+
+#hleft{
+    /* border: 2px solid crimson; */
+    min-width: 50%;
+    /* background-color: yellow; */
+}
+
+#hleft .elem{
+    position: relative;
+    height: 9vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+#hleft button{
+    pointer-events: all;
+    padding: .8vw 3vw;
+    font-family: "Kajiro";
+    font-size: 3vw;
+    margin-top: 2vw;
+}
+
+#hleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+#hleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
+
+    font-family: "Kajiro";
+    color: white;
+    font-weight: 100;
+    font-size: 11vw;
+}
+
+#hright{
+    font-family: 'Kanit', sans-serif;
+    width: 18%;
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+}
+
+#image{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 170px;
+    background: url('./Images/small.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+#hright p{
+    text-align: right;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+#hright p:nth-child(3){
+    margin-bottom: 50px;
+}
